@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextColour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter new colour"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter colour position" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAdditem"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:text="Add new colour"
+            android:textSize="16sp"
+            app:iconSize="20dp" />
+
+        <Button
+            android:id="@+id/buttonEditItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Edit colour"
+            android:textSize="16sp"
+            app:iconSize="20dp" />
+
+        <Button
+            android:id="@+id/buttonRemoveItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Remove colour"
+            android:textSize="16sp"
+            app:iconSize="20dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewColour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="30" />
+</LinearLayout>
